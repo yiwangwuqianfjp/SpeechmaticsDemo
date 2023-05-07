@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76D385EEF7F7C5483E3C61B3 /* Pods_SpeechmaticsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555750C021CE67611CB34AD9 /* Pods_SpeechmaticsDemo.framework */; };
+		A80F6F8029F511350081160D /* SupportedLanguages.plist in Resources */ = {isa = PBXBuildFile; fileRef = A80F6F7F29F511350081160D /* SupportedLanguages.plist */; };
+		A853DFE229F1158D0024EBB3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A853DFE129F1158D0024EBB3 /* HomeViewController.swift */; };
+		A853DFE429F11F730024EBB3 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A853DFE329F11F730024EBB3 /* SocketManager.swift */; };
+		A853E00229F122FA0024EBB3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A853E00129F122FA0024EBB3 /* Utils.swift */; };
+		A853E00529F12CA40024EBB3 /* PartialTranscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = A853E00429F12CA40024EBB3 /* PartialTranscript.swift */; };
+		A853E00829F136AC0024EBB3 /* TranscriptResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A853E00729F136AC0024EBB3 /* TranscriptResultCell.swift */; };
+		A853E01029F2763B0024EBB3 /* STTFilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A853E00A29F2763B0024EBB3 /* STTFilesTableViewController.m */; };
+		A853E01129F2763B0024EBB3 /* STTTxtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A853E00E29F2763B0024EBB3 /* STTTxtViewController.m */; };
+		A853E01229F2763B0024EBB3 /* STTChannelsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A853E00F29F2763B0024EBB3 /* STTChannelsTableViewController.m */; };
+		A853E01529F276740024EBB3 /* STTFilesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A853E01329F276740024EBB3 /* STTFilesManager.m */; };
+		A853E01929F283DA0024EBB3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A853E01829F283DA0024EBB3 /* SettingsViewController.swift */; };
+		A853E01B29F284950024EBB3 /* AppConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A853E01A29F284950024EBB3 /* AppConfigs.swift */; };
+		A8E23D0D29EE386800B4A8C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E23D0C29EE386800B4A8C7 /* AppDelegate.swift */; };
+		A8E23D0F29EE386800B4A8C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E23D0E29EE386800B4A8C7 /* SceneDelegate.swift */; };
+		A8E23D1129EE386800B4A8C7 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E23D1029EE386800B4A8C7 /* RoomViewController.swift */; };
+		A8E23D1429EE386800B4A8C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E23D1229EE386800B4A8C7 /* Main.storyboard */; };
+		A8E23D1629EE386900B4A8C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8E23D1529EE386900B4A8C7 /* Assets.xcassets */; };
+		A8E23D1929EE386900B4A8C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E23D1729EE386900B4A8C7 /* LaunchScreen.storyboard */; };
+		A8E23D2229EFEDBB00B4A8C7 /* KeyCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E23D2129EFEDBB00B4A8C7 /* KeyCenter.swift */; };
+		A8E23D2429EFEED900B4A8C7 /* RTCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E23D2329EFEED900B4A8C7 /* RTCManager.swift */; };
+		A8E23D2629F0DF7A00B4A8C7 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E23D2529F0DF7A00B4A8C7 /* String+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0FEFBEC3BF5E15AA701E493F /* Pods-SpeechmaticsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechmaticsDemo.debug.xcconfig"; path = "Target Support Files/Pods-SpeechmaticsDemo/Pods-SpeechmaticsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		555750C021CE67611CB34AD9 /* Pods_SpeechmaticsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechmaticsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67F17C8FDF060C2751BC73B1 /* Pods-SpeechmaticsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechmaticsDemo.release.xcconfig"; path = "Target Support Files/Pods-SpeechmaticsDemo/Pods-SpeechmaticsDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A80F6F7F29F511350081160D /* SupportedLanguages.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SupportedLanguages.plist; sourceTree = "<group>"; };
+		A853DFE129F1158D0024EBB3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A853DFE329F11F730024EBB3 /* SocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
+		A853E00129F122FA0024EBB3 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A853E00429F12CA40024EBB3 /* PartialTranscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialTranscript.swift; sourceTree = "<group>"; };
+		A853E00729F136AC0024EBB3 /* TranscriptResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptResultCell.swift; sourceTree = "<group>"; };
+		A853E00A29F2763B0024EBB3 /* STTFilesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTFilesTableViewController.m; sourceTree = "<group>"; };
+		A853E00B29F2763B0024EBB3 /* STTTxtViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTTxtViewController.h; sourceTree = "<group>"; };
+		A853E00C29F2763B0024EBB3 /* STTChannelsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTChannelsTableViewController.h; sourceTree = "<group>"; };
+		A853E00D29F2763B0024EBB3 /* STTFilesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTFilesTableViewController.h; sourceTree = "<group>"; };
+		A853E00E29F2763B0024EBB3 /* STTTxtViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTTxtViewController.m; sourceTree = "<group>"; };
+		A853E00F29F2763B0024EBB3 /* STTChannelsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTChannelsTableViewController.m; sourceTree = "<group>"; };
+		A853E01329F276740024EBB3 /* STTFilesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTFilesManager.m; sourceTree = "<group>"; };
+		A853E01429F276740024EBB3 /* STTFilesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTFilesManager.h; sourceTree = "<group>"; };
+		A853E01729F279640024EBB3 /* SpeechmaticsDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpeechmaticsDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		A853E01829F283DA0024EBB3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A853E01A29F284950024EBB3 /* AppConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigs.swift; sourceTree = "<group>"; };
+		A8E23D0929EE386800B4A8C7 /* SpeechmaticsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechmaticsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8E23D0C29EE386800B4A8C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A8E23D0E29EE386800B4A8C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A8E23D1029EE386800B4A8C7 /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
+		A8E23D1329EE386800B4A8C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8E23D1529EE386900B4A8C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8E23D1829EE386900B4A8C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A8E23D1A29EE386900B4A8C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8E23D2129EFEDBB00B4A8C7 /* KeyCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCenter.swift; sourceTree = "<group>"; };
+		A8E23D2329EFEED900B4A8C7 /* RTCManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCManager.swift; sourceTree = "<group>"; };
+		A8E23D2529F0DF7A00B4A8C7 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8E23D0629EE386800B4A8C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76D385EEF7F7C5483E3C61B3 /* Pods_SpeechmaticsDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23AD43EB64859F0384A87A60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				555750C021CE67611CB34AD9 /* Pods_SpeechmaticsDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68A2247C1959D6812BBC079E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FEFBEC3BF5E15AA701E493F /* Pods-SpeechmaticsDemo.debug.xcconfig */,
+				67F17C8FDF060C2751BC73B1 /* Pods-SpeechmaticsDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A853E00329F12C740024EBB3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A853E00429F12CA40024EBB3 /* PartialTranscript.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A853E00629F1366E0024EBB3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A853E00729F136AC0024EBB3 /* TranscriptResultCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A853E00929F2763B0024EBB3 /* TextFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A853E01429F276740024EBB3 /* STTFilesManager.h */,
+				A853E01329F276740024EBB3 /* STTFilesManager.m */,
+				A853E00D29F2763B0024EBB3 /* STTFilesTableViewController.h */,
+				A853E00A29F2763B0024EBB3 /* STTFilesTableViewController.m */,
+				A853E00B29F2763B0024EBB3 /* STTTxtViewController.h */,
+				A853E00E29F2763B0024EBB3 /* STTTxtViewController.m */,
+				A853E00C29F2763B0024EBB3 /* STTChannelsTableViewController.h */,
+				A853E00F29F2763B0024EBB3 /* STTChannelsTableViewController.m */,
+			);
+			path = TextFiles;
+			sourceTree = "<group>";
+		};
+		A8E23D0029EE386800B4A8C7 = {
+			isa = PBXGroup;
+			children = (
+				A8E23D0B29EE386800B4A8C7 /* SpeechmaticsDemo */,
+				A8E23D0A29EE386800B4A8C7 /* Products */,
+				68A2247C1959D6812BBC079E /* Pods */,
+				23AD43EB64859F0384A87A60 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A8E23D0A29EE386800B4A8C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8E23D0929EE386800B4A8C7 /* SpeechmaticsDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8E23D0B29EE386800B4A8C7 /* SpeechmaticsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A853E00929F2763B0024EBB3 /* TextFiles */,
+				A853E00629F1366E0024EBB3 /* Views */,
+				A853E00329F12C740024EBB3 /* Models */,
+				A853E00129F122FA0024EBB3 /* Utils.swift */,
+				A8E23D0C29EE386800B4A8C7 /* AppDelegate.swift */,
+				A8E23D0E29EE386800B4A8C7 /* SceneDelegate.swift */,
+				A853DFE129F1158D0024EBB3 /* HomeViewController.swift */,
+				A8E23D1029EE386800B4A8C7 /* RoomViewController.swift */,
+				A853E01829F283DA0024EBB3 /* SettingsViewController.swift */,
+				A8E23D2329EFEED900B4A8C7 /* RTCManager.swift */,
+				A853DFE329F11F730024EBB3 /* SocketManager.swift */,
+				A853E01A29F284950024EBB3 /* AppConfigs.swift */,
+				A80F6F7F29F511350081160D /* SupportedLanguages.plist */,
+				A8E23D1229EE386800B4A8C7 /* Main.storyboard */,
+				A8E23D1529EE386900B4A8C7 /* Assets.xcassets */,
+				A8E23D1729EE386900B4A8C7 /* LaunchScreen.storyboard */,
+				A8E23D1A29EE386900B4A8C7 /* Info.plist */,
+				A8E23D2129EFEDBB00B4A8C7 /* KeyCenter.swift */,
+				A8E23D2529F0DF7A00B4A8C7 /* String+Extensions.swift */,
+				A853E01729F279640024EBB3 /* SpeechmaticsDemo-Bridging-Header.h */,
+			);
+			path = SpeechmaticsDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8E23D0829EE386800B4A8C7 /* SpeechmaticsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8E23D1D29EE386900B4A8C7 /* Build configuration list for PBXNativeTarget "SpeechmaticsDemo" */;
+			buildPhases = (
+				EDA42D1913EA7E0ADCB892BA /* [CP] Check Pods Manifest.lock */,
+				A8E23D0529EE386800B4A8C7 /* Sources */,
+				A8E23D0629EE386800B4A8C7 /* Frameworks */,
+				A8E23D0729EE386800B4A8C7 /* Resources */,
+				FA105DAA2F1E60F4C2789141 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeechmaticsDemo;
+			productName = SpeechmaticsDemo;
+			productReference = A8E23D0929EE386800B4A8C7 /* SpeechmaticsDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8E23D0129EE386800B4A8C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					A8E23D0829EE386800B4A8C7 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = A8E23D0429EE386800B4A8C7 /* Build configuration list for PBXProject "SpeechmaticsDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8E23D0029EE386800B4A8C7;
+			productRefGroup = A8E23D0A29EE386800B4A8C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8E23D0829EE386800B4A8C7 /* SpeechmaticsDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8E23D0729EE386800B4A8C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E23D1929EE386900B4A8C7 /* LaunchScreen.storyboard in Resources */,
+				A8E23D1629EE386900B4A8C7 /* Assets.xcassets in Resources */,
+				A8E23D1429EE386800B4A8C7 /* Main.storyboard in Resources */,
+				A80F6F8029F511350081160D /* SupportedLanguages.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EDA42D1913EA7E0ADCB892BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeechmaticsDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA105DAA2F1E60F4C2789141 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechmaticsDemo/Pods-SpeechmaticsDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechmaticsDemo/Pods-SpeechmaticsDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpeechmaticsDemo/Pods-SpeechmaticsDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8E23D0529EE386800B4A8C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E23D2629F0DF7A00B4A8C7 /* String+Extensions.swift in Sources */,
+				A8E23D2229EFEDBB00B4A8C7 /* KeyCenter.swift in Sources */,
+				A853E01529F276740024EBB3 /* STTFilesManager.m in Sources */,
+				A853E00229F122FA0024EBB3 /* Utils.swift in Sources */,
+				A853DFE429F11F730024EBB3 /* SocketManager.swift in Sources */,
+				A853E01229F2763B0024EBB3 /* STTChannelsTableViewController.m in Sources */,
+				A8E23D1129EE386800B4A8C7 /* RoomViewController.swift in Sources */,
+				A853E01B29F284950024EBB3 /* AppConfigs.swift in Sources */,
+				A853E01929F283DA0024EBB3 /* SettingsViewController.swift in Sources */,
+				A853E00529F12CA40024EBB3 /* PartialTranscript.swift in Sources */,
+				A8E23D0D29EE386800B4A8C7 /* AppDelegate.swift in Sources */,
+				A853E01129F2763B0024EBB3 /* STTTxtViewController.m in Sources */,
+				A853E00829F136AC0024EBB3 /* TranscriptResultCell.swift in Sources */,
+				A8E23D0F29EE386800B4A8C7 /* SceneDelegate.swift in Sources */,
+				A853E01029F2763B0024EBB3 /* STTFilesTableViewController.m in Sources */,
+				A853DFE229F1158D0024EBB3 /* HomeViewController.swift in Sources */,
+				A8E23D2429EFEED900B4A8C7 /* RTCManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A8E23D1229EE386800B4A8C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8E23D1329EE386800B4A8C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A8E23D1729EE386900B4A8C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8E23D1829EE386900B4A8C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8E23D1B29EE386900B4A8C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8E23D1C29EE386900B4A8C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8E23D1E29EE386900B4A8C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FEFBEC3BF5E15AA701E493F /* Pods-SpeechmaticsDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = JDPG69R49Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpeechmaticsDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpeechmaticsDemo/LibYuv/libyuv",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.agora.SpeechmaticsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/SpeechmaticsDemo/SpeechmaticsDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8E23D1F29EE386900B4A8C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67F17C8FDF060C2751BC73B1 /* Pods-SpeechmaticsDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = JDPG69R49Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpeechmaticsDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpeechmaticsDemo/LibYuv/libyuv",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.agora.SpeechmaticsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/SpeechmaticsDemo/SpeechmaticsDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8E23D0429EE386800B4A8C7 /* Build configuration list for PBXProject "SpeechmaticsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8E23D1B29EE386900B4A8C7 /* Debug */,
+				A8E23D1C29EE386900B4A8C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8E23D1D29EE386900B4A8C7 /* Build configuration list for PBXNativeTarget "SpeechmaticsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8E23D1E29EE386900B4A8C7 /* Debug */,
+				A8E23D1F29EE386900B4A8C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8E23D0129EE386800B4A8C7 /* Project object */;
+}
